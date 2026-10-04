@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lissasfa System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📦 Lissasfa System</h1>
+    <div class="form">
+      <input type="text" id="productName" placeholder="Product Name">
+      <input type="number" id="productQty" placeholder="Quantity">
+      <input type="number" id="productprice" placeholder="price">
+      <button onclick="addProduct()">➕ Add</button>
+    </div>
+    <div class="form">
+      <input type="text" id="searchBox" placeholder="🔍 Search Product" onkeyup="searchProduct()">
+    </div> 
+    <h2>📋 Product List</h2>
+    <table id="inventoryTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Alert</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
